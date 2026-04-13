@@ -1,6 +1,6 @@
 # App Inventor AI 扩展组件库 (App Inventor AI Extensions)
 
-本项目提供了一系列适用于 MIT App Inventor 的人工智能扩展组件。通过这些扩展，App Inventor 开发者可以轻松地在他们的移动应用中集成各种强大的 AI 功能，包括大语言模型对话、图像识别、目标检测、文本处理、语音合成以及多模态生成等。
+本项目提供了一系列（共 **38** 个）适用于 MIT App Inventor 的人工智能扩展组件。通过这些扩展，App Inventor 开发者可以轻松地在他们的移动应用中集成各种强大的 AI 功能，包括大语言模型对话、图像识别、目标检测、文本处理、语音合成以及多模态生成等。
 
 ## 📑 目录 (Table of Contents)
 
