@@ -1,0 +1,12 @@
+# 编译产物
+x64/
+build/
+bin/
+out/
+*.class
+
+# IDE 和系统文件
+.idea/
+.vscode/
+*.iml
+.DS_Store
