@@ -23,18 +23,53 @@
 
 ```text
 App Inventor/
-├── AI_Extensions/          # 核心代码库：包含所有 Java 编写的 App Inventor 扩展源码
-│   ├── AIXBase.java        # 所有 AI 组件的基类，处理网络请求和基础功能
-│   ├── ChatBot.java        # 聊天机器人组件
-│   ├── ObjectDetection.java# 目标检测组件
-│   ├── ... (其他扩展源码)
-├── AI插件演示DEMO/         # 演示项目：提供包含测试代码的 .aia 工程文件
-│   ├── Qiu_AudioGen.aia    # 音频生成演示
-│   ├── Qiu_ImageAnalysis.aia # 图像分析演示
-│   ├── Qiu_LLM.aia         # 大模型演示
-│   ├── Qiu_ObjectDetection.aia # 目标检测演示
-│   └── Qiu_TextAnalysis.aia# 文本分析演示
-└── 效果图/                 # 功能效果展示：保存了各个组件在 App 中运行时的截图
+├── AI_Extensions/                # 核心代码库：包含所有 Java 编写的 App Inventor 扩展源码
+│   ├── AIXBase.java              # 核心基类：处理 HTTP 网络请求、Base64 编解码及回调分发机制
+│   ├── AnimalDetection.java      # 动物识别组件：用于检测和识别图片中的多种动物
+│   ├── AnsGen.java               # 文本问答组件：基于输入文本生成精准回答
+│   ├── CarPlateDetection.java    # 车牌检测组件：用于识别和定位图片中的车辆牌照
+│   ├── Cartoonize.java           # 人像卡通化组件：将真实人像照片转化为动漫风格
+│   ├── ChatBot.java              # 聊天机器人组件：支持多种大语言模型(LLM)的多轮对话交互
+│   ├── DogDetection.java         # 狗类检测组件：专门用于检测图片中的狗
+│   ├── DogLeashDetection.java    # 遛狗绳检测组件：检测画面中的狗是否佩戴牵引绳
+│   ├── ExpressionDetection.java  # 面部表情识别组件：检测人脸并分析其情绪/表情
+│   ├── FallDetection.java        # 跌倒检测组件：识别画面中人物是否发生跌倒动作
+│   ├── FightDetection.java       # 斗殴检测组件：检测视频/图片中是否发生打架斗殴事件
+│   ├── FireDetection.java        # 火灾检测组件：识别画面中是否存在明火
+│   ├── FlowerDetection.java      # 花卉识别组件：检测并识别不同种类的花朵
+│   ├── FruitDetection.java       # 水果识别组件：检测并识别各类水果
+│   ├── GarbageDetection.java     # 垃圾检测组件：识别画面中的垃圾目标
+│   ├── GarbageSortDetection.java # 垃圾分类检测组件：对识别到的垃圾进行智能分类
+│   ├── GestureDetection.java     # 手势识别组件：检测并识别人物的手势动作
+│   ├── HelmetDetection.java      # 安全帽检测组件：检测工人是否佩戴安全帽
+│   ├── ImageEmbedding.java       # 图像特征提取组件：将图片转化为高维向量用于检索比对
+│   ├── ImageToText.java          # 图像视觉理解组件(VQA)：对图片内容进行提问并获取文本描述
+│   ├── KnowledgeBase.java        # 知识库管理组件：配合大模型实现知识库增强(RAG)功能
+│   ├── MCQGen.java               # 选择题生成组件：根据文本材料自动生成多项选择题
+│   ├── MaskDetection.java        # 口罩检测组件：识别人物是否正确佩戴口罩
+│   ├── MindMap.java              # 思维导图组件：将文本结构化并输出为思维导图格式数据
+│   ├── MusicGen.java             # 音乐生成组件：根据文本描述提示词自动生成音乐片段
+│   ├── ObjectDetection.java      # 通用目标检测组件：利用 YOLO 等模型识别常见物体及其坐标框
+│   ├── PhoneDetection.java       # 玩手机检测组件：检测人物是否在违规使用手机
+│   ├── QuestionGen.java          # 简答题生成组件：根据背景材料自动生成简答题目
+│   ├── RemoveBackground.java     # 智能抠图组件：识别图像主体并消除背景
+│   ├── RolePlay.java             # 角色扮演组件：赋予 AI 特定人设进行交互对话
+│   ├── SmokeDetection.java       # 烟雾检测组件：识别画面中是否出现烟雾
+│   ├── TTS.java                  # 语音合成组件：将文本转换为自然流畅的语音音频
+│   ├── TextEmbedding.java        # 文本特征提取组件：将文本转化为向量用于语义搜索
+│   ├── TextSort.java             # 文本相似度排序组件：计算文本间的相似度并进行重排
+│   ├── TextToImage.java          # 文生图组件：根据文本 Prompt 描述生成对应图像
+│   ├── Translation.java          # 文本翻译组件：支持多语种之间的高质量互译
+│   ├── WorkClothesDetection.java # 工装检测组件：检测工人是否按规定穿着工作服
+│   ├── WritingMaster.java        # 写作大师组件：根据提示自动生成长文或创意文本
+│   └── ZeroClassification.java   # 零样本分类组件：在无需训练数据的情况下对文本进行分类
+├── AI插件演示DEMO/               # 演示项目：提供包含测试代码的 .aia 工程文件
+│   ├── Qiu_AudioGen.aia          # 音频生成演示
+│   ├── Qiu_ImageAnalysis.aia     # 图像分析演示
+│   ├── Qiu_LLM.aia               # 大模型演示
+│   ├── Qiu_ObjectDetection.aia   # 目标检测演示
+│   └── Qiu_TextAnalysis.aia      # 文本分析演示
+└── 效果图/                       # 功能效果展示：保存了各个组件在 App 中运行时的截图
 ```
 
 ![人工智能组件](效果图/人工智能组件.png)
